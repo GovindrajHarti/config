@@ -1,0 +1,42 @@
+    
+server:
+    port: 8083
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8090/eureka
+multipart:
+    maxFileSize: 3Mb
+netgloo:
+    paths:
+        uploadedFiles: D:/file
+
+security:
+  oauth2:
+    client:
+      # From OIDC app
+      clientId: 0oab1wnb7vrnrbywG0h7
+      clientSecret: nfkWvsG4KMpOXn9OBYkERiyTlJh4R2fRVkc-EIY7 
+      # From Authorization Server's metadata
+      accessTokenUri: https://dev-282396.oktapreview.com/oauth2/ausb22tej0oZK1Rpr0h7/v1/token
+      userAuthorizationUri: https://dev-282396.oktapreview.com/oauth2/ausb22tej0oZK1Rpr0h7/v1/authorize
+      clientAuthenticationScheme: form
+      scope: openid profile email
+    resource:
+      # from your Auth Server's metadata, check .well-known/openid-configuration
+      # if not in .well-known/oauth-authorization-server
+      userInfoUri: https://dev-282396.oktapreview.com/oauth2/ausb22tej0oZK1Rpr0h7/v1/userinfo
+      preferTokenInfo: false           
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/test?useSSL=false&user=root&password=MySql@123
+    jpa:
+        hibernate:
+            ddl-auto: create
+
+     
+            
+            
+ 
+
+
