@@ -1,10 +1,9 @@
     
-server:
-    port: 8083
+
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://localhost:8090/eureka
+            defaultZone: https://eurekaserviceregistry.cfapps.io/
 multipart:
     maxFileSize: 3Mb
 netgloo:
